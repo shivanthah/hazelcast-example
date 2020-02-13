@@ -1,0 +1,22 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'com.hazelcast:hazelcast-client:3.7.2'
+    testImplementation 'junit:junit:4.12'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.9'
+
+}
+
+application {
+    mainClassName = 'com.shivanthah.hazelcast.App'
+}
